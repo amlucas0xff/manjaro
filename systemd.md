@@ -32,7 +32,7 @@ Use `vim` to create the systemd unit file:
 > * System-installed services go in `/usr/lib/systemd/system`
 
 ```shell
-sudo vim /etc/systemd/system/service-name.service
+sudo vim /etc/systemd/system/name.service
 ```
 
 Insert the following content into the file:
@@ -45,7 +45,7 @@ After=network.target
 [Service]
 Type=simple
 User=root
-ExecStart=/full/path/to/your/service/execution
+ExecStart=/full/path/to/your/executable
 Restart=always
 RestartSec=30
 
@@ -57,17 +57,17 @@ Once the unit file is created, you need to enable and start it.
 Enable the service so it starts automatically when your system boots:
 
 ```shell
-sudo systemctl enable service-name.service
+sudo systemctl enable name.service
 ```
 
 Start the service immediately:
 ```
-sudo systemctl start service-name.service
+sudo systemctl start name.service
 ```
 
 Check the status of the service to make sure it’s running:
 ```shell
-sudo systemctl status service-name.service
+sudo systemctl status name.service
 ```
 
 #### Troubleshooting  
@@ -75,12 +75,12 @@ If your service doesn’t work as expected, you can check for errors:
 
 Check the service status:
 ```shell
-sudo systemctl status service-name.service
+sudo systemctl status name.service
 ```
 
 View detailed logs:
 ```shell
-sudo journalctl -u service-name.service
+sudo journalctl -u name.service
 ```
 
 Make sure the script path (`ExecStart`) is correct, and that your script has executable permissions.
