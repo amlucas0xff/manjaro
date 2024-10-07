@@ -27,13 +27,15 @@ This part explains when the service should start:
 Open a terminal.
 Use `vim` to create the systemd unit file:
 
+> [!NOTE]
+> * Place user-created service files in `/etc/systemd/system`
+> * System-installed services go in `/usr/lib/systemd/system`
+
 ```shell
 sudo vim /etc/systemd/system/service-name.service
 ```
 
-> [!NOTE]
-> * Place user-created service files in `/etc/systemd/system`
-> * System-installed services go in `/usr/lib/systemd/system`
+Insert the following content into the file:
 
 ```plaintext
 [Unit]
