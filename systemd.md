@@ -37,7 +37,7 @@ sudo vim /etc/systemd/system/service-name.service
 
 Insert the following content into the file:
 
-```plaintext
+```ini
 [Unit]
 Description=Description for your service
 After=network.target
