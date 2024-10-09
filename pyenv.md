@@ -11,6 +11,9 @@
 - **Environment Variable Overrides:** Override Python versions using environment variables.
 - **Multi-Version Command Searching:** Test compatibility across versions with tools like `tox`.
 
+> [!NOTE]
+> Don't mistake Pyenv with virtual env. management tools. Pyenv's purpose is to handle different versions of Python, not to manage virtual envs.
+
 ### How Pyenv Works: PATH and Shims
 
 - **PATH Variable:** Your shell searches for executable commands in directories listed in `PATH`. When you run `python` or `pip`, it finds the match from left to right.
