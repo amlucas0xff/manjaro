@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**Pyenv** helps manage multiple versions of Python independently from your operating system's default Python installation, preventing issues caused by modifying the system Python. Avoid changing the OS Python or its dependencies unless absolutely necessary.
+**Pyenv** helps manage multiple versions of Python independently from the operating system's default Python installation, preventing issues caused by modifying the system Python. Avoid changing the OS Python or its dependencies unless absolutely necessary.
 
 ### Why Use Pyenv?
 
